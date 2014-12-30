@@ -1,16 +1,14 @@
 require.config({
 
-    baseUrl: 'js/lib',
+    baseUrl: '../assets/lib',
 
     paths: {
+        backbone: '../backbone',
+        underscore: '../underscore',
+        bootstrap: '../bootstrap',
+        jquery: '../jquery',
         app: '../app',
         tpl: '../tpl'
-    },
-
-    map: {
-        '*': {
-            'app/models/employee': 'app/models/memory/employee'
-        }
     },
 
     shim: {
@@ -24,7 +22,7 @@ require.config({
     }
 });
 
-require(['jquery', 'backbone', 'app/router'], function ($, Backbone, Router) {
+require(['jquery', 'backbone', 'router'], function ($, Backbone, Router) {
     var router = new Router();
     Backbone.history.start();
 });
