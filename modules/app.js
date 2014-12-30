@@ -7,8 +7,6 @@ require.config({
         underscore: '../underscore',
         bootstrap: '../bootstrap',
         jquery: '../jquery',
-        app: '../app',
-        tpl: '../tpl'
     },
 
     shim: {
