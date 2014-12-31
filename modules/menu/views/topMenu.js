@@ -8,7 +8,7 @@ define(function (require) {
     return Backbone.View.extend({
 
         render: function () {
-            this.$el.html(template(this.model.attributes));
+            this.$el.html(template(this.model.attributes.top));
             return this;
         }
 

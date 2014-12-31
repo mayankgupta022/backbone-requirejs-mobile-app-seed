@@ -1,53 +1,51 @@
-<div class="navbar navbar-fixed-bottom navbar-inverse">
-    <div class="navbar-inner">
+<div class="navbar navbar-fixed-bottom navbar-default">
         <% if (visible === true) { %>
             <ul class="nav nav-justified text-center">
-                <% if (left.visible === true) { %>
-                    <li>
-                        <% if (left.route !== '') { %>
-                            <a href="#<%= left.route %>">
-                        <% } %>
-                        <% if (left.icon !== '') { %>
-                            <img src="<%= left.icon %>" />
-                        <% } else { %>
-                            <span><%= left.title %></span>
-                        <% } %>
-                        <% if (left.route !== '') { %>
-                            </a>
-                        <% } %>
-                    </li>
-                <% } %>
-                <% if (middle.visible === true) { %>
-                    <li>
-                        <% if (middle.route !== '') { %>
-                            <a href="#<%= middle.route %>">
-                        <% } %>
-                        <% if (middle.icon !== '') { %>
-                            <img src="<%= middle.icon %>" />
-                        <% } else { %>
-                            <span><%= middle.title %></span>
-                        <% } %>
-                        <% if (middle.route !== '') { %>
-                            </a>
-                        <% } %>
-                    </li>
-                <% } %>
-                <% if (right.visible === true) { %>
-                    <li>
-                        <% if (right.route !== '') { %>
-                            <a href="#<%= right.route %>">
-                        <% } %>
-                        <% if (right.icon !== '') { %>
-                            <img src="<%= right.icon %>" />
-                        <% } else { %>
-                            <span><%= right.title %></span>
-                        <% } %>
-                        <% if (right.route !== '') { %>
-                            </a>
-                        <% } %>
-                    </li>
-                <% } %>
-            </ul>
+            <% if (left.visible === true) { %>
+                <li <% if (left.active === true) { %> class="active" <% } %>>
+                    <% if (left.route !== '') { %>
+                        <a href="#<%= left.route %>">
+                    <% } %>
+                    <% if (left.icon !== '') { %>
+                        <img src="<%= left.icon %>" />
+                    <% } else { %>
+                        <span><%= left.title %></span>
+                    <% } %>
+                    <% if (left.route !== '') { %>
+                        </a>
+                    <% } %>
+                </li>
+            <% } %>
+            <% if (middle.visible === true) { %>
+                <li <% if (middle.active === true) { %> class="active" <% } %>>
+                    <% if (middle.route !== '') { %>
+                        <a href="#<%= middle.route %>">
+                    <% } %>
+                    <% if (middle.icon !== '') { %>
+                        <img src="<%= middle.icon %>" />
+                    <% } else { %>
+                        <span><%= middle.title %></span>
+                    <% } %>
+                    <% if (middle.route !== '') { %>
+                        </a>
+                    <% } %>
+                </li>
+            <% } %>
+            <% if (right.visible === true) { %>
+                <li <% if (right.active === true) { %> class="active" <% } %>>
+                    <% if (right.route !== '') { %>
+                        <a href="#<%= right.route %>">
+                    <% } %>
+                    <% if (right.icon !== '') { %>
+                        <img src="<%= right.icon %>" />
+                    <% } else { %>
+                        <span><%= right.title %></span>
+                    <% } %>
+                    <% if (right.route !== '') { %>
+                        </a>
+                    <% } %>
+                </li>
+            <% } %>
+          </ul>
         <% } %>
-    </div>
 </div>
