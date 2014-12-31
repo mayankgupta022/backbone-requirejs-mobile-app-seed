@@ -5,6 +5,10 @@ body {
     /*padding-bottom: 40px;*/
 }
 
+#content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .dropdown-menu {
     max-height: 400px;
     overflow: auto;
