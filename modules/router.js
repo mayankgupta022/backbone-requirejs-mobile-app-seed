@@ -21,14 +21,13 @@ define(function (require) {
             $body.html(shellView.render().el);
             $content = $("#content");
             menuView = new MenuView({el: $content});
-            menuView.render();
         },
 
         home: function () {
             // homeView.delegateEvents(); // delegate events when the view is recycled
             require(["home/views/home"], function (HomeView) {
                 var homeView = new HomeView({el: $content});
-                homeView.render(MenuView);
+                homeView.render(menuView);
             });
         }
 

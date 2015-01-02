@@ -16,6 +16,11 @@ define(function (require) {
             bottomMenuView = new BottomMenuView({model: model.Menu, el: $('#bottomMenu')});
         },
 
+        updateMenu: function(menuData) {
+            model.Menu.attributes = menuData;
+            this.render();
+        },
+
         render: function () {
             topMenuView.render();
             bottomMenuView.render();

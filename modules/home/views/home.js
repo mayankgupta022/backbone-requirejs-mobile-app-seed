@@ -2,16 +2,18 @@ define(function (require) {
 
     "use strict";
 
-    var $                   = require('jquery'),
-        _                   = require('underscore'),
-        Backbone            = require('backbone'),
-        tpl                 = require('text!home/tpl/home.html'),
+    var Backbone = require('backbone'),
+        model    = require('home/models/model'),
+        tpl      = require('text!home/tpl/home.html'),
 
         template = _.template(tpl);
 
     return Backbone.View.extend({
 
-        render: function () {
+        render: function (menuView) {
+            if (menuView) {
+                menuView.updateMenu(model.MenuData);
+            }
             this.$el.html(template());
             return this;
         }
