@@ -10,14 +10,14 @@ define(function (require) {
                     "visible" : true,
                     "title" : "topLeft",
                     "icon" : "",
-                    "route" : "",
+                    "route" : "try/2",
                     "active" : false
                 },
                 "middle" : {
                     "visible" : true,
                     "title" : "Home",
                     "icon" : "",
-                    "route" : "",
+                    "route" : "blank",
                     "active" : false
                 },
                 "right" : {

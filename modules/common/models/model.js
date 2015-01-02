@@ -3,10 +3,10 @@ define(function (require) {
     "use strict";
 
     var Backbone  = require('backbone'),
-        server_ip = 'localhost';
+        server_ip = 'localhost:82';
 
-    document.serverURL = 'http://' . server_ip;
-    document.mediaURL = 'http://' . server_ip;
+    document.serverURL = 'http://' + server_ip + '/';
+    document.mediaURL = 'http://' + server_ip + '/';
 
      var originalSync = Backbone.sync;
 
