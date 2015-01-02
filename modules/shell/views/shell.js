@@ -2,7 +2,8 @@ define(function (require) {
 
     "use strict";
 
-    var tpl      = require('text!shell/tpl/shell.html'),
+    var Backbone = require('backbone'),
+        tpl      = require('text!shell/tpl/shell.html'),
         template = _.template(tpl);
 
     return Backbone.View.extend({

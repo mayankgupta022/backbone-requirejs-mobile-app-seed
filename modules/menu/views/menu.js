@@ -2,7 +2,8 @@ define(function (require) {
 
     "use strict";
 
-    var model          = require('menu/models/model'),
+    var Backbone       = require('backbone'),
+        model          = require('menu/models/model'),
         TopMenuView    = require('menu/views/topMenu'),
         BottomMenuView = require('menu/views/bottomMenu'),
         topMenuView,

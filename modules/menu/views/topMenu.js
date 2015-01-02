@@ -2,7 +2,8 @@ define(function (require) {
 
     "use strict";
 
-    var tpl      = require('text!menu/tpl/topMenu.html'),
+    var Backbone = require('backbone'),
+    	tpl      = require('text!menu/tpl/topMenu.html'),
         template = _.template(tpl);
 
     return Backbone.View.extend({

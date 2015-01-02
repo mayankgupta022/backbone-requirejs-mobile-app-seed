@@ -2,26 +2,27 @@ define(function (require) {
 
     "use strict";
 
-    var menuData = {
+    var Backbone = require('backbone'),
+        menuData = {
             "top" : {
                 "visible" : true,
                 "left" : {
                     "visible" : true,
-                    "title" : "Sample",
+                    "title" : "topLeft",
                     "icon" : "",
                     "route" : "",
                     "active" : false
                 },
                 "middle" : {
                     "visible" : true,
-                    "title" : "Sample",
+                    "title" : "topMiddle",
                     "icon" : "",
                     "route" : "",
                     "active" : false
                 },
                 "right" : {
                     "visible" : true,
-                    "title" : "Sample",
+                    "title" : "topRight",
                     "icon" : "",
                     "route" : "",
                     "active" : false
@@ -31,21 +32,21 @@ define(function (require) {
                 "visible" : true,
                 "left" : {
                     "visible" : true,
-                    "title" : "Sample",
+                    "title" : "bottomLeft",
                     "icon" : "",
                     "route" : "",
                     "active" : false
                 },
                 "middle" : {
                     "visible" : true,
-                    "title" : "Sample",
+                    "title" : "bottomMiddle",
                     "icon" : "",
                     "route" : "",
                     "active" : false
                 },
                 "right" : {
                     "visible" : true,
-                    "title" : "Sample",
+                    "title" : "bottomRight",
                     "icon" : "",
                     "route" : "",
                     "active" : true

@@ -2,7 +2,7 @@ define(function (require) {
 
     "use strict";
 
-    var Backbone            = require('backbone'),
+    var Backbone  = require('backbone'),
         server_ip = 'localhost';
 
     document.serverURL = 'http://' . server_ip;
