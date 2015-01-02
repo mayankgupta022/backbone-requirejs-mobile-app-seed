@@ -16,6 +16,7 @@ define(function (require) {
         routes: {
             "": "home",
             "blank": "blank",
+            "login": "login",
             "try/:id": "try"
         },
 
@@ -33,9 +34,18 @@ define(function (require) {
         home: function () {
             var self = this;
             require(["home/views/home"], function (HomeView) {
-                var homeView = new HomeView({el: $content});
+                var homeView = new HomeView();
                 self.updateCurrentView(homeView);
-                homeView.render(menuView);
+                $(homeView.render(menuView).el).appendTo($content);
+            });
+        },
+
+        login: function () {
+            var self = this;
+            require(["login/views/login"], function (LoginView) {
+                var loginView = new LoginView();
+                self.updateCurrentView(loginView);
+                $(loginView.render(menuView).el).appendTo($content);
             });
         },
 
