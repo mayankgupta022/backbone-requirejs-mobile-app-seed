@@ -27,7 +27,7 @@ define(function (require) {
         },
 
         blank: function () {
-            document.router.navigate("", {trigger: true});
+            document.router.navigate("", {trigger: true, replace: true});//replace: true required if history not to be maintained
         },
 
         home: function () {
